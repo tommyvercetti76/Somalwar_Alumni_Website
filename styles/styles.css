@@ -1,54 +1,54 @@
 /* Reset some default browser styles */
 body, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Set font-family and font-size */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  /* Style the header */
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1c1c1c;
-    padding: 20px;
-  }
-  
-  /* Style the header image */
-  #header-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #1c1c1c;
-    padding: 20px;
-  }
-  
-  /* Style the navigation in the footer */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  /* Style the footer links */
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font-family and font-size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  position: relative;
+}
+
+/* Style the header image */
+#header-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #1c1c1c;
+  padding: 20px;
+}
+
+/* Style the navigation in the footer */
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+/* Style the footer links */
+footer nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
