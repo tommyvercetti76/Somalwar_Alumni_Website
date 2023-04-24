@@ -1,105 +1,173 @@
 /* Menu styles */
 
-/* Style the hamburger menu button */
-#menu-toggle {
-  display: inline-block;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 0;
-}
-
-#menu-toggle span {
-  display: block;
-  height: 3px;
-  width: 25px;
-  background-color: #ffffff;
-  margin: 5px 0;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Style the main menu */
-#menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #1c1c1c;
-  z-index: 100;
-}
-
-#menu ul {
-  list-style-type: none;
-}
-
-#menu li {
-  text-align: center;
-  padding: 15px 0;
-}
-
-/* Style the menu links */
-#menu a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#menu a:hover {
-  text-decoration: underline;
-}
-
-/* Style for larger screens */
-@media screen and (min-width: 768px) {
-  #menu-toggle {
-    display: none;
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
   }
-
-  #menu {
-    display: flex;
-    position: static;
-    background-color: transparent;
+  
+  /* Set font-family and font-size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
   }
-
-  #menu ul {
+  
+  /* Style the header */
+  header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 20px;
+    position: relative;
   }
-
-  #menu li {
+  
+  /* Style the header image */
+  #header-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the hamburger menu button */
+  #menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
     padding: 0;
+  }
+  
+  #menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Style the main menu */
+  #menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    z-index: 100;
+  }
+  
+  #menu ul {
+    list-style-type: none;
+  }
+  
+  #menu li {
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+/* Style the menu links */
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for larger screens */
+  @media screen and (min-width: 768px) {
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu {
+      display: flex;
+      position: static;
+      background-color: transparent;
+    }
+  
+    #menu ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #menu li {
+      padding: 0;
+      margin: 0 10px;
+    }
+  
+    /* Add some padding to the menu links */
+    #menu a {
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+  }
+  
+  /* Style the navigation in the footer */
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  footer nav li {
     margin: 0 10px;
   }
-
-  /* Add some padding to the menu links */
-  #menu a {
-    padding: 5px 10px;
+  
+  /* Style the footer links */
+  footer nav a {
+    color: #ffffff;
+    text-decoration: none;
   }
-}
-
-/* Smooth animation for the menu */
-#menu.open {
-  display: block;
-  animation: fadeIn 0.3s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
+  
+  footer nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Smooth animation for the menu */
+  #menu.open {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #menu-toggle.active span:nth-child(2) {
     opacity: 0;
   }
-  to {
-    opacity: 1;
+  
+  #menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-#menu-toggle.active span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-#menu-toggle.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+  
+  /* Add smooth transition for the menu button */
+  #menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+   
+  
