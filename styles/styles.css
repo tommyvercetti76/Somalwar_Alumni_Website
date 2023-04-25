@@ -25,13 +25,6 @@ header {
   height: auto;
 }
 
-/* Responsive styles for mobile screens */
-@media screen and (max-width: 767px) {
-  header {
-    padding: 0;
-  }
-}
-
 /* Hamburger menu styles */
 #menu-toggle {
   align-self: flex-start;
