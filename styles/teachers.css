@@ -96,11 +96,17 @@ main {
 .teacher-name {
   font-family: 'Custom_Bold';
   margin: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .teacher-experience, .teacher-designation {
   margin: 4px 0;
   font-family: 'Custom_Light';
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Media queries */
@@ -115,5 +121,25 @@ main {
   .teachers {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
+  }
+
+  .teacher-card {
+    padding: 16px;
+    width: 240px;
+  }
+
+  .teacher-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .teacher-name {
+    font-size: 1.2em;
+    margin: 12px 0;
+  }
+
+  .teacher-experience, .teacher-designation {
+    font-size: 1em;
+    margin: 6px 0;
   }
 }
