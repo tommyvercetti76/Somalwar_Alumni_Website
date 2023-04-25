@@ -46,11 +46,13 @@
   }
   
   .carousel-card img {
-    width: 60%;
-    height: 50%;
+    width: 80px; /* Set image width to 80px */
+    height: auto;
+    max-height: 80px; /* Set image max-height to 80px */
     display: block;
     margin-bottom: 4px;
     border-radius: 8px;
+    object-fit: cover; /* Add object-fit to maintain aspect ratio */
   }
   
   .carousel-card h3 {
@@ -66,7 +68,7 @@
     font-weight: medium;
     color: #555;
   }
-
+  
   .carousel-card .presentDay {
     margin-bottom: 10px;
     font-size: 1rem;
