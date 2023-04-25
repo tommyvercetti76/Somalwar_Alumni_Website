@@ -95,7 +95,7 @@ main {
 
 .teacher-name {
   font-family: 'Custom_Bold';
-  margin: 8px 0;
+  margin: 4px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
