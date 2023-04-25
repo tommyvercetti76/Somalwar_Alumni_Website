@@ -35,4 +35,32 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Error fetching carousel data:', error);
       });
   });
+
+  // Get the carousel and its indicators
+const carousel = document.querySelector('.carousel');
+const indicators = document.querySelectorAll('.carousel-indicator');
+
+// Add click event listeners to the indicators
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    // Scroll to the corresponding card
+    carousel.scrollTo({
+      left: carousel.offsetWidth * index,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Update the active indicator when scrolling
+carousel.addEventListener('scroll', () => {
+  const currentIndex = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+  indicators.forEach((indicator, index) => {
+    if (index === currentIndex) {
+      indicator.classList.add('current');
+    } else {
+      indicator.classList.remove('current');
+    }
+  });
+});
+
   
