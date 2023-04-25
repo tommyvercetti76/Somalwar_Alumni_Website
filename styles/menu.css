@@ -8,13 +8,17 @@
     border: none;
     outline: none;
     padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 101;
   }
   
   #menu-toggle span {
     display: block;
     height: 3px;
     width: 25px;
-    background-color: #ff9900; /* You can choose any contrasting color */
+    background-color: #ff9900; /* A contrasting color for the hamburger menu */
     margin: 5px 0;
     transition: all 0.3s ease-in-out;
   }
@@ -41,11 +45,12 @@
   
   /* Style the menu links */
   #menu a {
-    color: #ffffff;
+    color: #ff9900; /* A contrasting color for the menu text */
     text-decoration: none;
   }
   
   #menu a:hover {
+    color: #ffffff; /* Change the color on hover */
     text-decoration: underline;
   }
   
