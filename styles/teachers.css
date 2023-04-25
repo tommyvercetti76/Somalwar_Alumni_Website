@@ -52,7 +52,7 @@ main {
 
 .rounded-image {
   border-radius: 10px;
-  max-width: 200px;
+  max-width: 180px;
   display: block;
   margin: 20px auto;
 }
@@ -64,8 +64,8 @@ main {
 
 .teachers {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
   justify-items: center;
   padding: 20px;
 }
@@ -75,7 +75,7 @@ main {
   border-radius: 10px;
   padding: 20px;
   margin: 0;
-  width: 200px;
+  width: 180px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -87,8 +87,8 @@ main {
 }
 
 .teacher-image {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #3d9cff;
@@ -108,25 +108,13 @@ main {
 @media (min-width: 350px) {
   .teachers {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
+    grid-gap: 10px;
   }
 }
 
 @media (min-width: 800px) {
   .teachers {
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* Additional CSS to fix the margin issues on mobile screens */
-@media (max-width: 480px) {
-  body {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  main {
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-gap: 15px;
   }
 }
