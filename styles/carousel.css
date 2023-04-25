@@ -7,11 +7,11 @@
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
   }
   
   .carousel-card {
-    flex: none; /* Change this property */
+    flex: none;
     scroll-snap-align: start;
     padding: 20px;
     box-sizing: border-box;
@@ -20,12 +20,12 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.3s ease;
-    margin-right: 30px; /* Increase margin between cards */
-    width: 100%; /* Add width for carousel-card */
+    margin-right: 30px;
+    width: 100%;
   }
   
   .carousel-card:last-child {
-    margin-right: 0; /* Remove margin for the last card */
+    margin-right: 0;
   }
   
   .carousel-card:hover {
@@ -34,7 +34,7 @@
   }
   
   .carousel-card img {
-    width: 100%;
+    width: 60%; /* Reduce image size */
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -45,20 +45,20 @@
     margin: 0 0 5px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333; /* Improve text color */
+    color: #333;
   }
   
   .carousel-card .year {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
-    color: #555; /* Improve text color */
+    color: #555;
   }
   
   .carousel-card p {
     font-size: 0.9rem;
     line-height: 1.4;
-    color: #666; /* Improve text color */
+    color: #666;
   }
   
   .carousel-indicator {
@@ -77,11 +77,11 @@
   /* Media query for desktop and larger screens */
   @media (min-width: 1024px) {
     .carousel {
-      max-width: 800px; /* Adjust this value according to your design */
+      max-width: 800px;
     }
   
     .carousel-card {
-      width: calc(100% - 60px); /* Adjust width for carousel-card on desktop */
+      width: calc(100% - 60px);
     }
   }
   
