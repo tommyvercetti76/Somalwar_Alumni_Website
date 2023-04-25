@@ -1,40 +1,40 @@
 /* carousel.css */
 
 .carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 20px;
-}
-
-.carousel-card {
-  flex: 0 0 90%;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.carousel img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.carousel h3, .carousel p {
-  margin: 10px 0;
-}
-
-.carousel .year {
-  font-style: italic;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-card h3 {
+    margin: 0 0 5px;
+  }
+  
+  .carousel-card .year {
+    margin-bottom: 10px;
+  }
+  
+  /* Media query for desktop and larger screens */
+  @media (min-width: 1024px) {
+    .carousel {
+      max-width: 800px; /* Adjust this value according to your design */
+    }
+  }
+  
