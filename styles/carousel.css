@@ -47,9 +47,9 @@
   
   .carousel-card img {
     width: 60%;
-    height: auto;
+    height: 50%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     border-radius: 8px;
   }
   
@@ -61,6 +61,13 @@
   }
   
   .carousel-card .year {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: medium;
+    color: #555;
+  }
+
+  .carousel-card .presentDay {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
