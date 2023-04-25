@@ -11,7 +11,7 @@
   }
   
   .carousel-card {
-    flex: 0 0 100%;
+    flex: none; /* Change this property */
     scroll-snap-align: start;
     padding: 20px;
     box-sizing: border-box;
@@ -20,7 +20,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.3s ease;
-    margin-right: 20px; /* Add margin between cards */
+    margin-right: 30px; /* Increase margin between cards */
+    width: 100%; /* Add width for carousel-card */
   }
   
   .carousel-card:last-child {
@@ -60,10 +61,27 @@
     color: #666; /* Improve text color */
   }
   
+  .carousel-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .carousel-indicator.current {
+    background-color: #3d9cff;
+  }
+  
   /* Media query for desktop and larger screens */
   @media (min-width: 1024px) {
     .carousel {
       max-width: 800px; /* Adjust this value according to your design */
+    }
+  
+    .carousel-card {
+      width: calc(100% - 60px); /* Adjust width for carousel-card on desktop */
     }
   }
   
