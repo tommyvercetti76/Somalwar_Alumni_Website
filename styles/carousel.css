@@ -20,6 +20,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.3s ease;
+    margin-right: 20px; /* Add margin between cards */
+  }
+  
+  .carousel-card:last-child {
+    margin-right: 0; /* Remove margin for the last card */
   }
   
   .carousel-card:hover {
@@ -39,17 +44,20 @@
     margin: 0 0 5px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #333; /* Improve text color */
   }
   
   .carousel-card .year {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
+    color: #555; /* Improve text color */
   }
   
   .carousel-card p {
     font-size: 0.9rem;
     line-height: 1.4;
+    color: #666; /* Improve text color */
   }
   
   /* Media query for desktop and larger screens */
