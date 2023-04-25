@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Website</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/menu.css">
-  <script defer src="./scripts/menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/carousel.js"></script>
 </head>
+
 <body>
-  <header>
-    <img src="./images/header.png" alt="School Logo" id="header-image">
-    <button id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="teachers.html">Academics</a></li>
-        <li><a href="#">Student Life</a></li>
-        <li><a href="#">Centenary Celebrations</a></li>
-        <li><a href="#">Atal Tinkering Lab</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Page content goes here -->
-  <main>
-    <section>
-      <h1>Welcome to Our School</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porta nulla tincidunt neque lacinia, quis venenatis metus tincidunt. Etiam at commodo erat, a facilisis justo.</p>
-    </section>
-  </main>
-
+    <header>
+        <img src="./images/header.png" alt="School Logo" id="header-image">
+        <button id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="teachers.html">Academics</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Centenary Celebrations</a></li>
+                <li><a href="#">Atal Tinkering Lab</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to Our School</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum. Cras porta nulla tincidunt neque lacinia, quis venenatis metus tincidunt. Etiam at commodo
+                erat, a facilisis justo.</p>
+        </section>
+        <section class="carousel">
+            <div class="carousel-card">
+                <img src="./images/alumni1.jpg" alt="Alumni 1">
+                <h3>Alumni Name 1</h3>
+                <p class="year">Graduating Year: 2000</p>
+                <p>Alumni 1 message: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                    vestibulum vestibulum.</p>
+            </div>
+            <div class="carousel-card">
+                <img src="./images/alumni2.jpg" alt="Alumni 2">
+                <h3>Alumni Name 2</h3>
+                <p class="year">Graduating Year: 2005</p>
+                <p>Alumni 2 message: Cras porta nulla tincidunt neque lacinia, quis venenatis metus tincidunt. Etiam at
+                    commodo erat, a facilisis justo.</p>
+            </div>
+            <!-- Add more carousel cards as needed -->
+        </section>
+    </main>
 </body>
+
 </html>

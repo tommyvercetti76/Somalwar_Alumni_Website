@@ -1,0 +1,40 @@
+/* carousel.css */
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 20px;
+}
+
+.carousel-card {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.carousel h3, .carousel p {
+  margin: 10px 0;
+}
+
+.carousel .year {
+  font-style: italic;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
