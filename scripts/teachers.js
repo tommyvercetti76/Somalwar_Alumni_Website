@@ -1,36 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("teachers.json")
-    .then((response) => response.json())
-    .then((teachersData) => {
-      const teachersContainer = document.querySelector(".teachers");
-
-      teachersData.forEach((teacher) => {
-        const teacherCard = document.createElement("div");
-        teacherCard.classList.add("teacher-card");
-
-        const teacherImage = document.createElement("img");
-        teacherImage.classList.add("teacher-image");
-        teacherImage.src = teacher.imagePath;
-        teacherImage.alt = `${teacher.name}'s photo`;
-
-        const teacherName = document.createElement("h3");
-        teacherName.classList.add("teacher-name");
-        teacherName.textContent = teacher.name;
-
-        const teacherDesignation = document.createElement("p");
-        teacherDesignation.classList.add("teacher-designation");
-        teacherDesignation.textContent = teacher.designation;
-
-        const teacherExperience = document.createElement("p");
-        teacherExperience.classList.add("teacher-experience");
-        teacherExperience.textContent = `${teacher.experience} experience`;
-
-        teacherCard.appendChild(teacherImage);
-        teacherCard.appendChild(teacherName);
-        teacherCard.appendChild(teacherDesignation);
-        teacherCard.appendChild(teacherExperience);
-
-        teachersContainer.appendChild(teacherCard);
-      });
-    });
-});
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('/json/teachers.json')
+      .then(response => response.json())
+      .then(teachers => {
+        const teachersContainer = document.querySelector('.teachers');
+        teachersContainer.innerHTML = '';
+  
+        teachers.forEach(teacher => {
+          const teacherCard = document.createElement('div');
+          teacherCard.classList.add('teacher-card');
+  
+          teacherCard.innerHTML = `
+            <img src="${teacher.imagePath}" alt="${teacher.name}" class="teacher-image">
+            <h3 class="teacher-name">${teacher.name}</h3>
+            <p class="teacher-experience">${teacher.experience}</p>
+            <p class="teacher-designation">${teacher.designation}</p>
+          `;
+  
+          teachersContainer.appendChild(teacherCard);
+        });
+      })
+      .catch(error => console.error('Error fetching teachers data:', error));
+  });
+  
