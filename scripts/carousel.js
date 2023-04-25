@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
           const year = document.createElement('p');
           year.classList.add('year');
           year.textContent = item.year;
+
+          const presentDay = document.createElement('p');
+          year.classList.add('presentDay');
+          year.textContent = item.year;
   
           const message = document.createElement('p');
           message.textContent = item.message;
@@ -27,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
           card.appendChild(img);
           card.appendChild(name);
           card.appendChild(year);
+          card.appendChild(presentDay);
           card.appendChild(message);
           carousel.appendChild(card);
         });
