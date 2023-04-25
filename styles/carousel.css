@@ -1,13 +1,24 @@
 /* carousel.css */
 
-.carousel {
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
     padding: 20px;
+    margin: 0 auto;
+    position: relative;
   }
   
   .carousel-card {
@@ -34,7 +45,7 @@
   }
   
   .carousel-card img {
-    width: 60%; /* Reduce image size */
+    width: 60%;
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -59,6 +70,12 @@
     font-size: 0.9rem;
     line-height: 1.4;
     color: #666;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
   
   .carousel-indicator {
