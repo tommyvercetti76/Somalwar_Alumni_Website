@@ -32,29 +32,11 @@ header {
   height: auto;
 }
 
-/* Style the footer */
-footer {
-  background-color: #1c1c1c;
-  padding: 20px;
-}
-
-/* Style the navigation in the footer */
-footer nav ul {
+/* Add this new style to styles.css */
+.header-container {
   display: flex;
   justify-content: center;
-  list-style-type: none;
-}
-
-footer nav li {
-  margin: 0 10px;
-}
-
-/* Style the footer links */
-footer nav a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  text-decoration: underline;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
 }
