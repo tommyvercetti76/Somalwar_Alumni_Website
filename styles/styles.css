@@ -3,12 +3,6 @@
   src: url('/fonts/Yantramanav-Bold.ttf') format('truetype');
 }
 
-/* Reset some default browser styles */
-body, ul {
-  margin: 0;
-  padding: 0;
-}
-
 /* Set font-family, font-size, and background color */
 body {
   font-family: 'Custom_Bold', Arial, sans-serif;
