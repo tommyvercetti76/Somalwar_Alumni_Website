@@ -24,6 +24,7 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
   padding: 20px;
   background-color: #1c1c1c;
   color: #ffffff;
+  border-bottom: 5px solid #3d9cff;
 }
 
 header h1 {
@@ -69,13 +71,19 @@ main {
 }
 
 .teacher-card {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
   margin: 0;
   width: 200px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .teacher-image {
@@ -83,6 +91,7 @@ main {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #3d9cff;
 }
 
 .teacher-name {
