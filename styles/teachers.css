@@ -1,8 +1,30 @@
+@font-face {
+  font-family: 'Custom_Bold';
+  src: url('/fonts/Yantramanav-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Custom_Regular';
+  src: url('/fonts/Yantramanav-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Custom_Medium';
+  src: url('/fonts/Yantramanav-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Custom_Light';
+  src: url('/fonts/Yantramanav-Light.ttf') format('truetype');
+}
+
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Custom_Regular', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
 header {
@@ -12,7 +34,13 @@ header {
   color: #ffffff;
 }
 
+header h1 {
+  font-family: 'Custom_Bold';
+  font-size: 2rem;
+}
+
 header h2 {
+  font-family: 'Custom_Medium';
   margin-top: 10px;
 }
 
@@ -32,6 +60,7 @@ main {
 /* Message */
 .message {
   margin: 20px 0;
+  font-family: 'Custom_Light';
 }
 
 /* Teacher cards */
@@ -48,6 +77,7 @@ main {
   margin: 10px;
   width: 200px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .teacher-image {
@@ -58,9 +88,11 @@ main {
 }
 
 .teacher-name {
+  font-family: 'Custom_Bold';
   margin: 10px 0;
 }
 
 .teacher-experience, .teacher-education {
   margin: 5px 0;
+  font-family: 'Custom_Light';
 }
