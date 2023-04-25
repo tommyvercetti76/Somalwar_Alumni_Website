@@ -117,3 +117,16 @@ main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Additional CSS to fix the margin issues on mobile screens */
+@media (max-width: 480px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
