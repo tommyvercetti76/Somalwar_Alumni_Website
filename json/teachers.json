@@ -1,0 +1,117 @@
+[
+  {
+    "imagePath": "images/teacher_images/bharati_parate.png",
+    "name": "Mrs. Bharti Parate",
+    "experience": "31 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/vandana.png",
+    "name": "Mrs. Vandana Lamdhade",
+    "experience": "26 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/devina.png",
+    "name": "Mrs. Devina Taywade",
+    "experience": "13 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/mamta.png",
+    "name": "Mrs. Mamta Bobade",
+    "experience": "10 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/shalini.png",
+    "name": "Mrs. Shalini Dudhe",
+    "experience": "9 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/anita.png",
+    "name": "Mrs. Anita Gurav",
+    "experience": "9 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/shweta.png",
+    "name": "Mrs. Shweta Nanoti",
+    "experience": "8 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/anjali.png",
+    "name": "Mrs. Anjali Upadhye",
+    "experience": "8 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/rekha.png",
+    "name": "Mrs. Rekha Sardar",
+    "experience": "6 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/chitra.png",
+    "name": "Mrs. Chitra Kuthe",
+    "experience": "6 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/anagha.png",
+    "name": "Mrs. Anagha Deshkar",
+    "experience": "6 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/vanda.png",
+    "name": "Mrs. Vandana Mohod",
+    "experience": "3 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/sharda.png",
+    "name": "Mrs. Sharda Chahande",
+    "experience": "2 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/seems.png",
+    "name": "Mrs. Seema Dhole",
+    "experience": "1 year of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/swati.png",
+    "name": "Mrs. Swati Dongre",
+    "experience": "1 year of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/prajakta.png",
+    "name": "Mrs. Prajakta Korde",
+    "experience": "8 months of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/sneha.png",
+    "name": "Mrs. Snehal Dangre",
+    "experience": "6 Months of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/shuchita.png",
+    "name": "Mrs. Shuchita Agnihotri",
+    "experience": "13 years of experience",
+    "designation": "Asst. Teacher"
+  },
+  {
+    "imagePath": "images/teacher_images/dilip.png",
+    "name": "Mr. Dilip Chedge",
+    "experience": "10 years of experience",
+    "designation": "Office Staff"
+  }
+]
+

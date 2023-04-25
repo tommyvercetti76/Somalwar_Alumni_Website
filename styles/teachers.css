@@ -101,3 +101,16 @@ main {
   margin: 5px 0;
   font-family: 'Custom_Light';
 }
+
+@media (min-width: 768px) {
+  .teachers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .teacher-card {
+    margin: 0;
+  }
+}
+
