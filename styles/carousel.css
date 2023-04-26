@@ -9,8 +9,10 @@
   }
   
   .carousel {
-    display: flex;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
@@ -18,7 +20,6 @@
     padding: 20px;
     margin: 0 auto;
     position: relative;
-    justify-content: center;
   }
   
   .carousel-card {
@@ -32,15 +33,17 @@
     text-align: center;
     transition: all 0.3s ease;
     margin-right: 30px;
-    width: 100%;
+    width: 250px;
     max-width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   
   .carousel-card:last-child {
     margin-right: 0;
+  }
+  
+  .carousel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .carousel-card img {
@@ -48,7 +51,7 @@
     max-width: 80px;
     height: auto;
     display: block;
-    margin-right: 4px;
+    margin-bottom: 4px;
     border-radius: 8px;
     object-fit: cover;
   }
@@ -74,6 +77,14 @@
     color: #555;
   }
   
+  .carousel-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
   .carousel-indicators {
     display: flex;
     justify-content: center;
@@ -91,6 +102,12 @@
   
   .carousel-indicator.current {
     background-color: #3d9cff;
+  }
+  
+  @media (min-width: 1024px) {
+    .carousel {
+      max-width: 800px;
+    }
   }
   
   .modal {
