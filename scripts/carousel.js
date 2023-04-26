@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
           year.textContent = item.year;
   
           const presentDay = document.createElement('p');
-          year.classList.add('presentDay');
-          year.textContent = item.year;
+          presentDay.classList.add('presentDay');
+          presentDay.textContent = item.presentDay;
   
           const message = document.createElement('p');
           message.textContent = item.message;
@@ -80,6 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  
-         
   
