@@ -1,7 +1,6 @@
 .carousel-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
@@ -23,6 +22,9 @@
   }
   
   .carousel-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex: none;
     scroll-snap-align: start;
     padding: 20px;
@@ -30,11 +32,25 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     transition: all 0.3s ease;
     margin-right: 30px;
     width: 250px;
     max-width: 90%;
+  }
+  
+  .carousel-card img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-right: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .carousel-card-content {
+    display: flex;
+    flex-direction: column;
   }
   
   .carousel-card:last-child {
@@ -44,45 +60,6 @@
   .carousel-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .carousel-card img {
-    width: 100%;
-    max-width: 80px;
-    height: auto;
-    display: block;
-    margin-bottom: 4px;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .carousel-card h3 {
-    margin: 0 0 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .carousel-card .year {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: medium;
-    color: #555;
-  }
-  
-  .carousel-card .presentDay {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: medium;
-    color: #555;
-  }
-  
-  .carousel-card p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #666;
-    height: auto;
-    margin-bottom: 0;
   }
   
   .carousel-indicators {
@@ -145,15 +122,4 @@
     text-decoration: none;
     cursor: pointer;
   }
-  
-  @media (min-width: 1024px) {
-    .carousel {
-      max-width: 800px;
-    }
-  
-    .carousel-card {
-      max-width: 90%;
-    }
-  }
-  
   
