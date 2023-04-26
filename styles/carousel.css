@@ -1,17 +1,11 @@
-/* carousel.css */
-
-body {
-    background-color: #000; /* Set body background to black */
-  }
-  
-  .carousel-container {
+.carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding to container */
+    padding: 0 20px;
   }
   
   .carousel {
@@ -31,13 +25,14 @@ body {
     scroll-snap-align: start;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #1f1f1f; /* Updated background color */
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.3s ease;
     margin-right: 30px;
-    width: auto; /* Changed from 100% to auto for snug fit */
+    width: auto;
+    max-width: 90%; /* Limit the maximum width */
   }
   
   .carousel-card:last-child {
@@ -46,13 +41,13 @@ body {
   
   .carousel-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .carousel-card img {
-    width: 100%; /* Changed from 80px to 100% for logical scaling */
+    width: 100%;
+    max-width: 120px; /* Set max-width to scale down image */
     height: auto;
-    max-height: 80px;
     display: block;
     margin-bottom: 4px;
     border-radius: 8px;
@@ -63,21 +58,27 @@ body {
     margin: 0 0 5px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fff; /* Updated color for black background */
+    color: #333;
   }
   
-  .carousel-card .year,
+  .carousel-card .year {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: medium;
+    color: #555;
+  }
+  
   .carousel-card .presentDay {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
-    color: #ccc; /* Updated color for black background */
+    color: #555;
   }
   
   .carousel-card p {
     font-size: 0.9rem;
     line-height: 1.4;
-    color: #bbb; /* Updated color for black background */
+    color: #666;
   }
   
   .carousel-indicators {
@@ -90,7 +91,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #444; /* Updated color for black background */
+    background-color: #bbb;
     border-radius: 50%;
     margin: 5px;
   }
@@ -107,6 +108,8 @@ body {
   
     .carousel-card {
       width: auto;
+      max-width: 90%; /* Limit the maximum width */
     }
   }
+  
   
