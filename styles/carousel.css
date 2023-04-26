@@ -6,9 +6,9 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-}
+  }
   
-.carousel {
+  .carousel {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -19,9 +19,9 @@
     margin: 0 auto;
     position: relative;
     justify-content: center;
-}
+  }
   
-.carousel-card {
+  .carousel-card {
     flex: none;
     scroll-snap-align: start;
     padding: 20px;
@@ -29,88 +29,102 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     transition: all 0.3s ease;
     margin-right: 30px;
-    width: 100%;
+    display: flex;
+    align-items: center;
     max-width: 90%;
-    min-height: 200px; /* Added a fixed minimum height */
-}
+  }
   
-.carousel-card:last-child {
-    margin-right: 0;
-}
-  
-.carousel-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-  
-.carousel-card img {
-    width: 100%;
-    max-width: 80px;
+  .carousel-card img {
+    width: 80px;
     height: auto;
-    display: block;
-    margin-bottom: 4px;
+    margin-right: 15px;
     border-radius: 8px;
     object-fit: cover;
-}
+  }
   
-.carousel-card h3 {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel-card h3 {
     margin: 0 0 5px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-}
+  }
   
-.carousel-card .year {
-    margin-bottom: 10px;
+  .carousel-card .year,
+  .carousel-card .presentDay {
+    margin-bottom: 2px;
     font-size: 1rem;
     font-weight: medium;
     color: #555;
-}
+  }
   
-.carousel-card .presentDay {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: medium;
-    color: #555;
-}
-  
-.carousel-card p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #666;
-    height: auto;
-    margin-bottom: 0;
-}
-  
-.carousel-indicators {
+  .carousel-indicators {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+  }
   
-.carousel-indicator {
+  .carousel-indicator {
     display: inline-block;
     width: 10px;
     height: 10px;
     background-color: #bbb;
     border-radius: 50%;
     margin: 5px;
-}
+  }
   
-.carousel-indicator.current {
+  .carousel-indicator.current {
     background-color: #3d9cff;
-}
+  }
   
-@media (min-width: 1024px) {
-    .carousel {
-        max-width: 800px;
-    }
-
-    .carousel-card {
-        width: auto;
-        max-width: 400px;
-    }
-}
+  /* Modal styles */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
