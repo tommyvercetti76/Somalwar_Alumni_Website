@@ -6,9 +6,9 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-  }
+}
   
-  .carousel {
+.carousel {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -18,10 +18,10 @@
     padding: 20px;
     margin: 0 auto;
     position: relative;
-    justify-content: center; /* Added to center the cards */
-  }
+    justify-content: center;
+}
   
-  .carousel-card {
+.carousel-card {
     flex: none;
     scroll-snap-align: start;
     padding: 20px;
@@ -32,20 +32,21 @@
     text-align: center;
     transition: all 0.3s ease;
     margin-right: 30px;
-    width: 250px; /* Added to wrap the content tightly */
+    width: 100%;
     max-width: 90%;
-  }
+    min-height: 200px; /* Added a fixed minimum height */
+}
   
-  .carousel-card:last-child {
+.carousel-card:last-child {
     margin-right: 0;
-  }
+}
   
-  .carousel-card:hover {
+.carousel-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .carousel-card img {
+.carousel-card img {
     width: 100%;
     max-width: 80px;
     height: auto;
@@ -53,63 +54,63 @@
     margin-bottom: 4px;
     border-radius: 8px;
     object-fit: cover;
-  }
+}
   
-  .carousel-card h3 {
+.carousel-card h3 {
     margin: 0 0 5px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-  }
+}
   
-  .carousel-card .year {
+.carousel-card .year {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
     color: #555;
-  }
+}
   
-  .carousel-card .presentDay {
+.carousel-card .presentDay {
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: medium;
     color: #555;
-  }
+}
   
-  .carousel-card p {
+.carousel-card p {
     font-size: 0.9rem;
     line-height: 1.4;
     color: #666;
     height: auto;
     margin-bottom: 0;
-  }
+}
   
-  .carousel-indicators {
+.carousel-indicators {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-  }
+}
   
-  .carousel-indicator {
+.carousel-indicator {
     display: inline-block;
     width: 10px;
     height: 10px;
     background-color: #bbb;
     border-radius: 50%;
     margin: 5px;
-  }
+}
   
-  .carousel-indicator.current {
+.carousel-indicator.current {
     background-color: #3d9cff;
-  }
+}
   
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .carousel {
-      max-width: 800px;
+        max-width: 800px;
     }
-  
+
     .carousel-card {
-      max-width: 90%;
+        width: auto;
+        max-width: 400px;
     }
-  }
-  
+}
