@@ -18,6 +18,7 @@
     padding: 20px;
     margin: 0 auto;
     position: relative;
+    justify-content: center; /* Added to center the cards */
   }
   
   .carousel-card {
@@ -31,7 +32,8 @@
     text-align: center;
     transition: all 0.3s ease;
     margin-right: 30px;
-    max-width: 90%; /* Limit the maximum width */
+    width: 250px; /* Added to wrap the content tightly */
+    max-width: 90%;
   }
   
   .carousel-card:last-child {
@@ -45,7 +47,7 @@
   
   .carousel-card img {
     width: 100%;
-    max-width: 80px; /* Set max-width to scale down image */
+    max-width: 80px;
     height: auto;
     display: block;
     margin-bottom: 4px;
@@ -78,8 +80,8 @@
     font-size: 0.9rem;
     line-height: 1.4;
     color: #666;
-    height: auto; /* Adjust height to fit content */
-    margin-bottom: 0; /* Remove margin-bottom to reduce white space */
+    height: auto;
+    margin-bottom: 0;
   }
   
   .carousel-indicators {
@@ -101,14 +103,13 @@
     background-color: #3d9cff;
   }
   
-  /* Media query for desktop and larger screens */
   @media (min-width: 1024px) {
     .carousel {
       max-width: 800px;
     }
   
     .carousel-card {
-      max-width: 90%; /* Limit the maximum width */
+      max-width: 90%;
     }
   }
   
